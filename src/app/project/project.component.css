@@ -109,7 +109,7 @@ h2 {
 }
 .descriptionText {
   width: 55%;
-  padding: 30px 70px;
+  padding: 30px 10px 30px 70px;
   color: white;
   font-size: 16px;
   display: flex;
@@ -152,14 +152,15 @@ h3 {
   width: 20px;
 }
 .link {
-  margin-bottom: 20px;
+  margin: 0px 20px 20px 20px;
+  width: 80%;
   height: 25px;
-  width: 100%;
   text-align: center;
 }
 .link a {
   color: white;
   text-decoration: none;
+  word-wrap:break-word;
 }
 .rightBox {
   padding: 20px 0px;
@@ -189,6 +190,7 @@ li button {
   font-weight: 600;
   border-radius: 15px;
   letter-spacing: 2px;
+  word-wrap:break-word;
 }
 li button:hover,
 .buttonBox button:hover,
@@ -204,7 +206,7 @@ li button:hover,
   color: #4f5ce8;
   transition: ease-in-out 400ms;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width:1000px) {
   section {
     height: 100%;
     padding-top: 70px;
@@ -212,15 +214,28 @@ li button:hover,
   article {
     flex-direction: column-reverse;
   }
-  .rightBox {
-    width: 100%;
-  }
   .leftBox {
     margin-top: 20px;
     width: 100%;
     height: 100%;
     min-height: 0px;
   }
+  .rightBox{
+    height: 100%;
+    min-height: 0px;
+    width: 100%;
+  }
+  .description {
+    height: 100%;
+  }
+  .descriptionText,
+  .technology {
+    width: 100%;
+    padding: 30px 30px;
+  }
+}
+@media only screen and (max-width: 600px) {
+
   .arrow {
     display: none;
   }
@@ -237,14 +252,7 @@ li button:hover,
     padding: 0px 0%;
     margin-bottom: 20px;
   }
-  .description {
-    height: 100%;
-  }
-  .descriptionText,
-  .technology {
-    width: 100%;
-    padding: 30px 30px;
-  }
+
   .buttonBox {
     padding: 0px 1%;
   }
