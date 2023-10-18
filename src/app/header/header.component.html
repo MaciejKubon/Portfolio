@@ -1,0 +1,22 @@
+<header [ngClass]="headerClass">
+  <!-- <span><img src="../../assets/logo.png" alt="MKLogo"></span> -->
+  <nav [ngClass]="navClass">
+    <ul>
+      <li *ngFor="let SN of sectionName">
+        <a
+          href="#{{ SN.name }}"
+          (click)="clickNavbar(SN.id)"
+          [ngClass]="SN.className"
+          >{{ SN.name }}</a
+        >
+      </li>
+    </ul>
+  </nav>
+  <button>
+    <img
+      src="../../assets/hamburger.png"
+      alt="menu button"
+      (click)="changeMenu()" 
+    />
+  </button>
+</header>

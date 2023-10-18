@@ -1,0 +1,91 @@
+section{
+    height: 90vh;
+}
+article{
+    padding-top: 100px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+.text{
+    padding-right: 5%;
+    width: 50%;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+}
+h2{
+
+    width: 100%;
+    font-size: 32px;
+    line-height: 40px;
+
+}
+h3{
+    width: 100%;
+    font-size: 24px;
+    line-height: 35px;
+}
+p{
+    width: 100%;
+    font-size: 16px;
+    line-height: 25px;
+}
+button{
+    margin-top: 50px;
+}
+button a{
+    padding: 10px 40px;
+    color: white;
+    width: 100%;
+    background-color: #4F5CE8;
+    border-radius: 15px;
+    font-size: 14px;
+    font-weight: 600;
+    transition: 500ms;
+    text-decoration: none;
+
+}
+button a:hover
+{
+    background-color: white;
+    color: #4F5CE8;
+    transition: 500ms;
+    cursor: pointer;
+}
+.photo
+{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh
+}
+figure{
+    width: 100%;
+}
+figure img{
+    width: 100%;
+}
+@media only screen and (max-width: 600px) {
+    article{
+        flex-direction: column-reverse;
+        padding-top: 10px;
+
+    }
+    .text, .photo{
+        width: 100%;
+    }
+    figure{
+    width: 100%;
+    }
+    .photo{
+        height: auto;
+    }
+    .text{
+        margin-top: 20px;
+    }
+}
+

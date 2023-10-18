@@ -1,0 +1,13 @@
+
+
+section{
+    margin-top: 80px;
+    display: block;
+    justify-content: center;
+    padding: 0px 10%;
+}
+@media only screen and (max-width: 600px) {
+    section{
+    margin-top: 50px;
+    }
+}

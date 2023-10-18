@@ -1,0 +1,88 @@
+<section id="project">
+  <h1>PROJECT</h1>
+  <article>
+    <div class="leftBox">
+      <h2>{{ projectList[activeProject].name }}</h2>
+
+      <div class="buttonBox">
+        <button [ngClass]="gallery" (click)="changGallery()">gallery</button>
+        <button [ngClass]="description" (click)="changDescrtiption()">
+          description
+        </button>
+      </div>
+      <div class="contentBox">
+        <div class="gallery" *ngIf="galleryActive">
+          <div class="photos">
+            <div class="arrow">
+              <button (click)="nextPhoto(-1)">&#60;</button>
+            </div>
+            <figure>
+              <img
+                src="../../assets/project/{{
+                  projectList[activeProject].folder
+                }}/{{
+                  projectList[activeProject].photoGallery[numberActivePhoto]
+                }}"
+              />
+            </figure>
+            <div class="arrow">
+              <button (click)="nextPhoto(1)">&#62;</button>
+            </div>
+          </div>
+          <div class="dots">
+            <button
+              *ngFor="
+                let numberPhoto of projectList[activeProject].photoGallery;
+                index as i
+              "
+              [ngClass]="{
+                activePhoto: numberActivePhoto == i,
+                noActivePhoto: numberActivePhoto != i
+              }"
+              (click)="changePhoto(i)"
+            ></button>
+          </div>
+        </div>
+        <div class="description" *ngIf="!galleryActive">
+          <div class="descriptionText">
+            <p>
+              {{ projectList[activeProject].description }}
+            </p>
+          </div>
+          <div class="technology">
+            <h3>Technology</h3>
+            <ul>
+              <li
+                *ngFor="
+                  let tech of projectList[activeProject].technologyGallery
+                "
+              >
+                <figure>
+                  <img src="../../assets/technology/{{ tech.image }}.png" />
+                </figure>
+                <span>{{ tech.name }}</span>
+              </li>
+            </ul>
+          </div>
+          <div class="link">
+            <a href="{{ projectList[activeProject].link }}">{{
+              projectList[activeProject].link
+            }}</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="rightBox">
+      <ul>
+        <li *ngFor="let project of projectList">
+          <button
+            [ngClass]="project.className"
+            (click)="changeProject(project.id)"
+          >
+            {{ project.name }}
+          </button>
+        </li>
+      </ul>
+    </div>
+  </article>
+</section>
