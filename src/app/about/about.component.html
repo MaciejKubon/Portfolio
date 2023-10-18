@@ -16,7 +16,7 @@
       <ul>
         <li *ngFor="let skill of skills">
           <figure>
-            <img src="../../assets/technology/{{ skill.image }}" />
+            <img src="./assets/technology/{{ skill.image }}" />
           </figure>
           {{ skill.name }}
         </li>
@@ -27,7 +27,7 @@
       <ul>
         <li *ngFor="let language of languages">
           <figure>
-            <img src="../../assets/technology/{{ language.image }}" />
+            <img src="./assets/technology/{{ language.image }}" />
           </figure>
           {{ language.level }}
         </li>
@@ -39,7 +39,7 @@
     <ul>
       <li *ngFor="let link of links">
         <figure>
-          <img src="../../assets/linkImage/{{ link.image }}" />
+          <img src="./assets/linkImage/{{ link.image }}" />
         </figure>
         <a href="{{ link.link }}">{{ link.name }}</a>
       </li>
