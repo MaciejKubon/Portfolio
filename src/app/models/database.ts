@@ -92,12 +92,12 @@ export const links: Links[] = [
   {
     name: 'maciejk2233@gmail.com',
     image: 'email.png',
-    link: '#about',
+    link: 'mailto:maciejk2233@gmail.com',
   },
   {
     name: 'Curriculum vitae',
     image: 'CV.png',
-    link: '../assets/MaciejKubon.pdf',
+    link: './assets/MaciejKubon.pdf',
   },
 ];
 export const skills: technology[] = [
