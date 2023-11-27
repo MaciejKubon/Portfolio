@@ -10,5 +10,5 @@ import { languages, links, skills } from '../models/database';
 export class AboutComponent {
   links: Links[] = links
   skills:technology[] = skills;
-  languages:language[]=languages;
+  languages:language[]= languages;
 }
