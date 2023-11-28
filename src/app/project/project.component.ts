@@ -42,19 +42,11 @@ export class ProjectComponent {
       }
     }
   }
-  defaultSetting() {
-    this.numberActivePhoto = 0;
-    this.gallery = 'activeProject';
-    this.description = 'noActiveProject';
-    this.galleryActive = true;
-  }
-  changeProject(idProject: number) {
-    this.projectList.forEach((element) => {
-      element.className = 'noActiveProject';
-    });
-    this.projectList[idProject - 1].className = 'activeProject';
-    this.activeProject = idProject - 1;
-    this.defaultSetting();
+
+  aProject(aProj:number){
+    this.activeProject=aProj
+    console.log(this.activeProject, aProj);
+    
   }
   changGallery() {
     this.gallery = 'activeProject';

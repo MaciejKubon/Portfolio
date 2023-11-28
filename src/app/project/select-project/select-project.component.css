@@ -1,0 +1,67 @@
+.selectProjectButton {
+  display: none;
+  width: 100%;
+  padding: 5px 20px;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 15px;
+  letter-spacing: 2px;
+  word-wrap: break-word;
+  color: white;
+  text-align: center;
+  justify-content: space-between;
+}
+ul {
+  display: flex;
+  list-style: none;
+  width: 100%;
+  flex-wrap: wrap;
+  align-content: space-between;
+  height: 100%;
+}
+li {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding: 10px 0px;
+  width: 100%;
+}
+li button {
+  width: 80%;
+  padding: 5px 5px;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 15px;
+  letter-spacing: 2px;
+  word-wrap: break-word;
+}
+li button:hover,
+.buttonBox button:hover,
+.dots button {
+  cursor: pointer;
+}
+.activeProject {
+  background-color: #4f5ce8;
+  color: white;
+  transition: ease-in-out 400ms;
+}
+.noActiveProject {
+  color: #4f5ce8;
+  transition: ease-in-out 400ms;
+}
+@media only screen and (max-width: 1000px) {
+  .selectProjectButton {
+    display: flex;
+  }
+  .visableMenu {
+    display: flex;
+  }
+  .hiddeMenu {
+    display: none;
+  }
+  span {
+    width: 40%;
+    text-align: end;
+    padding-right: 20px;
+  }
+}

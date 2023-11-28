@@ -7,6 +7,8 @@ import { FooterComponent } from './footer/footer.component';
 import { StartComponent } from './start/start.component';
 import { ProjectComponent } from './project/project.component';
 import { AboutComponent } from './about/about.component';
+import { SelectProjectComponent } from './project/select-project/select-project.component';
+import { FormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
@@ -15,9 +17,12 @@ import { AboutComponent } from './about/about.component';
     StartComponent,
     ProjectComponent,
     AboutComponent,
+    SelectProjectComponent,
+    
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    [FormsModule],
   ],
   providers: [],
   bootstrap: [AppComponent]

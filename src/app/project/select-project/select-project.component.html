@@ -1,0 +1,10 @@
+<button class="selectProjectButton" (click)="changeMenu()">
+  Select Project <span>&#8897;</span>
+</button>
+<ul [className]="visableMenu">
+  <li *ngFor="let project of projectList">
+    <button [ngClass]="project.className" (click)="changeProject(project.id)">
+      {{ project.name }}
+    </button>
+  </li>
+</ul>

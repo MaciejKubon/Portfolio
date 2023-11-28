@@ -72,17 +72,6 @@
         </div>
       </div>
     </div>
-    <div class="rightBox">
-      <ul>
-        <li *ngFor="let project of projectList">
-          <button
-            [ngClass]="project.className"
-            (click)="changeProject(project.id)"
-          >
-            {{ project.name }}
-          </button>
-        </li>
-      </ul>
-    </div>
+    <app-select-project class="rightBox" (aProject)="aProject($event)"></app-select-project>
   </article>
 </section>
