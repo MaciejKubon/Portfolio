@@ -28,7 +28,6 @@ export class ProjectComponent {
       this.defaultTouch.time = event.timeStamp;
     } else if (event.type === 'touchend') {
       let deltaX = touch.pageX - this.defaultTouch.x;
-      let deltaY = touch.pageY - this.defaultTouch.y;
       let deltaTime = event.timeStamp - this.defaultTouch.time;
 
       if (deltaTime < 500) {
@@ -45,8 +44,6 @@ export class ProjectComponent {
 
   aProject(aProj:number){
     this.activeProject=aProj
-    console.log(this.activeProject, aProj);
-    
   }
   changGallery() {
     this.gallery = 'activeProject';

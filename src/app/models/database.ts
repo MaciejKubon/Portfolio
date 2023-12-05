@@ -62,21 +62,21 @@ export const projectList: ProjectList[] = [
     link: 'https://maciejkubon.github.io/polmed_typescrip/',
   },
   {
-    id:4,
-    name:'Portfolio',
+    id: 4,
+    name: 'Portfolio',
     className: 'noActiveProject',
     folder: 'Portfolio',
     photoGallery: ['01.png', '02.png', '03.png'],
     description:
-      'The project was created to present myself, my current projects and achievements. To create it, I used the Angular framework and TypeScript. ',
-      technologyGallery: [
-        { name: 'HTML', image: 'HTML' },
-        { name: 'CSS', image: 'CSS' },
-        { name: 'TypeScript', image: 'TypeScript' },
-        { name: 'Angular', image: 'Angular' },
-      ],
-      link: 'https://maciejkubon.github.io/Portfolio/',
-  }
+      'The project was created to present myself along with my current projects and achievements. During development, I used the Angular framework and TypeScript. The website is designed to be fully responsive ',
+    technologyGallery: [
+      { name: 'HTML', image: 'HTML' },
+      { name: 'CSS', image: 'CSS' },
+      { name: 'TypeScript', image: 'TypeScript' },
+      { name: 'Angular', image: 'Angular' },
+    ],
+    link: 'https://maciejkubon.github.io/Portfolio/',
+  },
 ];
 export const links: Links[] = [
   {
@@ -115,7 +115,7 @@ export const skills: technology[] = [
   },
   {
     name: 'JQuery',
-    image: 'JQuery.png'
+    image: 'JQuery.png',
   },
   {
     name: 'HTML',
