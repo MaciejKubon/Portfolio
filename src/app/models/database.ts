@@ -68,14 +68,14 @@ export const projectList: ProjectList[] = [
     folder: 'Portfolio',
     photoGallery: ['01.png', '02.png', '03.png'],
     description:
-      'The project was completed during the process of learning TypeScript. As part of the learning process, I rewrote one of the previous projects from JavaScript/JQuery to TypeScript. All functionalities remained unchanged, such as selecting medical specialties and then a specific doctor, choosing the purpose of the visit, along with the date and time. ',
+      'The project was created to present myself, my current projects and achievements. To create it, I used the Angular framework and TypeScript. ',
       technologyGallery: [
         { name: 'HTML', image: 'HTML' },
         { name: 'CSS', image: 'CSS' },
         { name: 'TypeScript', image: 'TypeScript' },
         { name: 'Angular', image: 'Angular' },
       ],
-      link: 'https://maciejkubon.github.io/polmed_typescrip/',
+      link: 'https://maciejkubon.github.io/Portfolio/',
   }
 ];
 export const links: Links[] = [
