@@ -18,9 +18,7 @@
             </div>
             <figure>
               <img
-                src="./assets/project/{{
-                  projectList[activeProject].folder
-                }}/{{
+                src="./assets/project/{{ projectList[activeProject].folder }}/{{
                   projectList[activeProject].photoGallery[numberActivePhoto]
                 }}"
               />
@@ -72,6 +70,9 @@
         </div>
       </div>
     </div>
-    <app-select-project class="rightBox" (aProject)="aProject($event)"></app-select-project>
+    <app-select-project
+      class="rightBox"
+      (aProject)="aProject($event)"
+    ></app-select-project>
   </article>
 </section>
