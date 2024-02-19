@@ -1,0 +1,18 @@
+ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 15px;
+}
+li {
+  display: flex;
+  margin-right: 20px;
+  color: white;
+}
+figure {
+  margin-right: 10px;
+}
+img {
+  width: 25px;
+  height: 25px;
+}

@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { Links, language, technology } from '../models/interface';
-import { languages, links, skills } from '../models/database';
+import { Header } from '../models/interface';
+import { headers, description } from '../models/database';
 
 @Component({
   selector: 'app-about',
@@ -8,7 +8,6 @@ import { languages, links, skills } from '../models/database';
   styleUrls: ['./about.component.css'],
 })
 export class AboutComponent {
-  links: Links[] = links
-  skills:technology[] = skills;
-  languages:language[]= languages;
+  headers: Header[] = headers;
+  descritpion: string = description;
 }

@@ -1,47 +1,17 @@
-<article id="about">
+<section id="about">
   <div class="aboutBox">
-    <p>
-      I am a student of Applied Computer Science at the Crakow University of
-      Technology. I graduated from Technical School No. 1 of the name of Ignacy
-      Mościckiego in Tarnów, Poland, specializing in computer science. I have been
-      passionate about computer science since my school years. Since October
-      2022, I have been a member of the Scientific Circle of Programmers and
-      Computer Enthusiasts, where I co-created the circle's website and
-      participated in the AquaSharp project. From July 2023 to September 2023, I
-      worked at Selkea company as a service technician . 
-    </p>
-    <div class="skillBox">
-      <h2>Skills</h2>
-      <ul>
-        <li *ngFor="let skill of skills">
-          <figure>
-            <img src="./assets/technology/{{ skill.image }}" />
-          </figure>
-          {{ skill.name }}
-        </li>
-      </ul>
-    </div>
-    <div class="languageBox">
-      <h2>Language</h2>
-      <ul>
-        <li *ngFor="let language of languages">
-          <figure>
-            <img src="./assets/technology/{{ language.image }}" />
-          </figure>
-          {{ language.level }}
-        </li>
-      </ul>
-    </div>
+    <p>{{ descritpion }}</p>
+    <article class="skillBox">
+      <app-header-component [title]="headers[0].title" />
+      <app-skill-component />
+    </article>
+    <article class="languageBox">
+      <app-header-component [title]="headers[1].title" />
+      <app-language-component />
+    </article>
   </div>
-  <div class="linkBox">
-    <h2>Links</h2>
-    <ul>
-      <li *ngFor="let link of links">
-        <figure>
-          <img src="./assets/linkImage/{{ link.image }}" />
-        </figure>
-        <a href="{{ link.link }}">{{ link.name }}</a>
-      </li>
-    </ul>
-  </div>
-</article>
+  <article class="linkBox">
+    <app-header-component [title]="headers[2].title" />
+    <app-link-component />
+  </article>
+</section>

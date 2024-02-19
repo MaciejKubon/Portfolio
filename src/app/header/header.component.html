@@ -1,5 +1,4 @@
 <header [ngClass]="headerClass">
-  <!-- <span><img src="../../assets/logo.png" alt="MKLogo"></span> -->
   <nav [ngClass]="navClass">
     <ul>
       <li *ngFor="let SN of sectionName">
@@ -16,7 +15,7 @@
     <img
       src="./assets/hamburger.png"
       alt="menu button"
-      (click)="changeMenu()" 
+      (click)="changeMenu()"
     />
   </button>
 </header>
