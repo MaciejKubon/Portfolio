@@ -1,4 +1,10 @@
-import { Component, EventEmitter, HostListener, Output } from '@angular/core';
+import {
+  Component,
+  EventEmitter,
+  HostListener,
+  Input,
+  Output,
+} from '@angular/core';
 import { NameSection } from '../models/interface';
 import { sectionName } from '../models/database';
 
@@ -9,27 +15,19 @@ import { sectionName } from '../models/database';
 })
 export class HeaderComponent {
   @Output() changeLanguage = new EventEmitter<string>();
+  @Input() actualLanguage: string;
   @HostListener('window:scroll', ['$event']) onScrollEvent($event: any) {
     if (window.scrollY < 10) this.headerClass = 'header_top';
     else this.headerClass = 'header_scroll';
 
     this.changeNavDecoration(window.scrollY);
   }
-  EN: string = 'activeLang';
-  PL: string = '';
   headerClass: string = 'header_top';
   navClass: string = '';
   navActive: boolean = false;
   sectionName: NameSection[] = sectionName;
   changeLanguageButton(language: string) {
     this.changeLanguage.emit(language);
-    if (language == 'pl') {
-      this.EN = '';
-      this.PL = 'activeLang';
-    } else {
-      this.EN = 'activeLang';
-      this.PL = '';
-    }
   }
   changeNavDecoration(position: number) {
     this.sectionName.forEach((el) => {

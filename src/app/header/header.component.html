@@ -3,14 +3,14 @@
     <button
       class="languageButton"
       (click)="changeLanguageButton('en')"
-      [ngClass]="EN"
+      [ngClass]="{ activeLang: actualLanguage == 'en' }"
     >
       <img src="../../assets/language/EN.png" alt="EN" />
     </button>
     <button
       class="languageButton"
       (click)="changeLanguageButton('pl')"
-      [ngClass]="PL"
+      [ngClass]="{ activeLang: actualLanguage == 'pl' }"
     >
       <img src="../../assets/language/PL.png" alt="PL" />
     </button>
