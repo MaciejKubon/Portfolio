@@ -1,4 +1,20 @@
 <header [ngClass]="headerClass">
+  <div class="languageBox">
+    <button
+      class="languageButton"
+      (click)="changeLanguageButton('en')"
+      [ngClass]="EN"
+    >
+      <img src="../../assets/language/EN.png" alt="EN" />
+    </button>
+    <button
+      class="languageButton"
+      (click)="changeLanguageButton('pl')"
+      [ngClass]="PL"
+    >
+      <img src="../../assets/language/PL.png" alt="PL" />
+    </button>
+  </div>
   <nav [ngClass]="navClass">
     <ul>
       <li *ngFor="let SN of sectionName">
@@ -11,7 +27,7 @@
       </li>
     </ul>
   </nav>
-  <button>
+  <button class="hamburgerButton">
     <img
       src="./assets/hamburger.png"
       alt="menu button"
