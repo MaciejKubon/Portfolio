@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { skills } from 'src/app/models/database';
-import { technology } from 'src/app/models/interface';
+import { Skills } from 'src/app/models/interface';
 
 @Component({
   selector: 'app-skill-component',
@@ -8,5 +8,5 @@ import { technology } from 'src/app/models/interface';
   styleUrls: ['./skill-component.component.css'],
 })
 export class SkillComponentComponent {
-  skills: technology[] = skills;
+  skills: Skills[] = skills;
 }

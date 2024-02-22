@@ -10,21 +10,19 @@ export interface ProjectList {
   folder: string;
   photoGallery: string[];
   description: string;
-  technologyGallery: technology[];
+  technologyGallery: Skills[];
   link: string;
 }
-export interface technology {
+export interface Skills {
   image: string;
   name: string;
-}
-export interface language {
-  image: string;
-  level: string;
+  level?: string;
 }
 export interface Links {
   name: string;
   image: string;
   link: string;
+  addres?: string;
 }
 
 export interface Header {

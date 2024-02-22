@@ -3,5 +3,15 @@
         "1": "start",
         "2": "o mnie",
         "3": "Projety"
+    },
+    "about": {
+        "description": "Obecnie jestem studentem Informatyki Stosowanej na Politechnice Krakowskiej. Ukoczyłem Technikum nr 1 im. Ignacego Mościckiego w Tarnowie z dyplomem technik informatyk. Od lat szkolnych pasjonuje się informatyką. W październiku 2022 roku wstąpiłem do Koła Programistów i Miłośników Informatyki, gdzie współtowrzyem stronę internetową koła oraz brałem udział w projekcie AquaSharp. Obecnie pracujemy nad aplikacją będącą komunikatorem Obecnie pracujemy nad aplikacją będącą komunikatorem o nazwie PIMIConnect . Od lipca 2023 do września 2023 pracowałem w firmie Selkea na stanowisku serwisant sprzętu komputerowego.",
+        "skills" : "umiejętności ",
+        "language" : "języki",
+        "links" : "linki",
+        "languageName": {
+            "polish" : "polski",
+            "english" : "angielski"
+        }
     }
 }
