@@ -1,6 +1,6 @@
-import { Component, HostListener } from '@angular/core';
+import { Component, EventEmitter, HostListener, Output } from '@angular/core';
 import { NameSection } from '../models/interface';
-import {sectionName} from'../models/database';
+import { sectionName } from '../models/database';
 
 @Component({
   selector: 'app-header',
@@ -8,15 +8,28 @@ import {sectionName} from'../models/database';
   styleUrls: ['./header.component.css'],
 })
 export class HeaderComponent {
-  headerClass = 'header_top';
-  navClass = '';
-  navActive = false;
-  sectionName: NameSection[] = sectionName;
+  @Output() changeLanguage = new EventEmitter<string>();
   @HostListener('window:scroll', ['$event']) onScrollEvent($event: any) {
     if (window.scrollY < 10) this.headerClass = 'header_top';
     else this.headerClass = 'header_scroll';
 
     this.changeNavDecoration(window.scrollY);
+  }
+  EN: string = 'activeLang';
+  PL: string = '';
+  headerClass: string = 'header_top';
+  navClass: string = '';
+  navActive: boolean = false;
+  sectionName: NameSection[] = sectionName;
+  changeLanguageButton(language: string) {
+    this.changeLanguage.emit(language);
+    if (language == 'pl') {
+      this.EN = '';
+      this.PL = 'activeLang';
+    } else {
+      this.EN = 'activeLang';
+      this.PL = '';
+    }
   }
   changeNavDecoration(position: number) {
     this.sectionName.forEach((el) => {
@@ -34,7 +47,7 @@ export class HeaderComponent {
   calculaateHeight(numberSection: number): number {
     let height: number = 0;
     let element: HTMLElement;
-  
+
     for (let i: number = 0; i < numberSection; i++) {
       element = document.querySelector(
         `#${this.sectionName[i].name}`
