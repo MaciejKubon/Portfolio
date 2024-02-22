@@ -1,11 +1,4 @@
-import {
-  Links,
-  NameSection,
-  ProjectList,
-  language,
-  technology,
-  Header,
-} from './interface';
+import { Links, NameSection, ProjectList, Header, Skills } from './interface';
 
 export const sectionName: NameSection[] = [
   { id: 1, name: 'start', className: 'noActive' },
@@ -101,7 +94,7 @@ export const links: Links[] = [
     link: './assets/MaciejKubon.pdf',
   },
 ];
-export const skills: technology[] = [
+export const skills: Skills[] = [
   {
     name: 'Angular',
     image: 'Angular.png',
@@ -127,12 +120,14 @@ export const skills: technology[] = [
     image: 'CSS.png',
   },
 ];
-export const languages: language[] = [
+export const languages: Skills[] = [
   {
+    name: 'polish',
     image: 'polish.png',
     level: 'NATIVE',
   },
   {
+    name: 'english',
     image: 'english.png',
     level: 'B2',
   },
@@ -140,14 +135,12 @@ export const languages: language[] = [
 
 export const headers: Header[] = [
   {
-    title: 'Sklils',
+    title: 'skills',
   },
   {
-    title: 'Language',
+    title: 'language',
   },
   {
-    title: 'Links',
+    title: 'links',
   },
 ];
-export const description: string =
-  "I am a student of Applied Computer Science at the Crakow University of Technology. I graduated from Technical School No. 1 of the name of Ignacy Mościckiego in Tarnów, Poland, specializing in computer science. I have been passionate about computer science since my school years. Since October 2022, I have been a member of the Scientific Circle of Programmers and Computer Enthusiasts, where I co-created the circle's website and participated in the AquaSharp project. From July 2023 to September 2023, I worked at Selkea company as a service technician .";

@@ -1,7 +1,7 @@
 <ul>
   <li *ngFor="let link of links">
     <figure>
-      <img src="./assets/linkImage/{{ link.image }}" />
+      <img src="./assets/linkImage/{{ link.image }}" alt="{{ link.name }}" />
     </figure>
     <a href="{{ link.link }}">{{ link.name }}</a>
   </li>

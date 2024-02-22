@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { Header } from '../models/interface';
-import { headers, description } from '../models/database';
+import { headers } from '../models/database';
 
 @Component({
   selector: 'app-about',
@@ -9,5 +9,4 @@ import { headers, description } from '../models/database';
 })
 export class AboutComponent {
   headers: Header[] = headers;
-  descritpion: string = description;
 }

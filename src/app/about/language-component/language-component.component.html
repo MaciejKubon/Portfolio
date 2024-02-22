@@ -1,7 +1,10 @@
 <ul>
   <li *ngFor="let language of languages">
     <figure>
-      <img src="./assets/technology/{{ language.image }}" />
+      <img
+        src="./assets/technology/{{ language.image }}"
+        alt="{{ 'about.languageName.' + language.name | translate }}"
+      />
     </figure>
     {{ language.level }}
   </li>

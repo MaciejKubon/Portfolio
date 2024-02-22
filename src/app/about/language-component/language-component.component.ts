@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { languages } from 'src/app/models/database';
-import { language } from 'src/app/models/interface';
+import { Skills } from 'src/app/models/interface';
 
 @Component({
   selector: 'app-language-component',
@@ -8,5 +8,5 @@ import { language } from 'src/app/models/interface';
   styleUrls: ['./language-component.component.css'],
 })
 export class LanguageComponentComponent {
-  languages: language[] = languages;
+  languages: Skills[] = languages;
 }
