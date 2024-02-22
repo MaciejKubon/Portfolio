@@ -22,7 +22,7 @@
           href="#{{ SN.name }}"
           (click)="clickNavbar(SN.id)"
           [ngClass]="SN.className"
-          >{{ SN.name }}</a
+          >{{ "sectionName." + SN.id | translate }}</a
         >
       </li>
     </ul>
