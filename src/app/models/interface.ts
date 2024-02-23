@@ -9,7 +9,6 @@ export interface ProjectList {
   className: string;
   folder: string;
   photoGallery: string[];
-  description: string;
   technologyGallery: Skills[];
   link: string;
 }
