@@ -28,9 +28,8 @@ section {
   min-width: 250px;
   margin-top: 60px;
 }
-
-@media only screen and (max-width: 600px) {
-  article {
+@media only screen and (max-width: 900px) {
+  section {
     flex-wrap: wrap;
   }
   .aboutBox {
