@@ -13,7 +13,6 @@ export const projectList: ProjectList[] = [
     className: 'activeProject',
     folder: 'POLmed_javascript',
     photoGallery: ['mainPage.png', 'doctorPage.png', 'confirmPage.png'],
-    description: `The website was created as an academic project and was developed according to clear guidelines. The website is intended to showcase the appearance and functionality of the front-end platform for booking doctor's appointments. It allows users to select medical specialties and then choose a specific doctor. Next, users can select the purpose of the visit along with the date and time. Users also have the option to cancel appointments.`,
     technologyGallery: [
       { name: 'HTML', image: 'HTML' },
       { name: 'CSS', image: 'CSS' },
@@ -29,8 +28,6 @@ export const projectList: ProjectList[] = [
     className: 'noActiveProject',
     folder: 'PIMI',
     photoGallery: ['01.png', '02.png', '03.png', '04.png', '05.png', '06.png'],
-    description:
-      'The website was created for the needs of the Academic Circle of Programmers and Computer Enthusiasts operating at the Faculty of Mechanical Engineering of the Cracow University of Technology. It was developed as one of the first projects after the reactivation of the circle. Several members of the academic circle were involved in the creation of the website.',
     technologyGallery: [
       { name: 'HTML', image: 'HTML' },
       { name: 'CSS', image: 'CSS' },
@@ -45,8 +42,6 @@ export const projectList: ProjectList[] = [
     className: 'noActiveProject',
     folder: 'POLMED_typescript',
     photoGallery: ['mainPage.png', 'doctorPage.png', 'confirmPage.png'],
-    description:
-      'The project was completed during the process of learning TypeScript. As part of the learning process, I rewrote one of the previous projects from JavaScript/JQuery to TypeScript. All functionalities remained unchanged, such as selecting medical specialties and then a specific doctor, choosing the purpose of the visit, along with the date and time. ',
     technologyGallery: [
       { name: 'HTML', image: 'HTML' },
       { name: 'CSS', image: 'CSS' },
@@ -61,8 +56,6 @@ export const projectList: ProjectList[] = [
     className: 'noActiveProject',
     folder: 'Portfolio',
     photoGallery: ['01.png', '02.png', '03.png'],
-    description:
-      'The project was created to present myself along with my current projects and achievements. During development, I used the Angular framework and TypeScript. The website is designed to be fully responsive ',
     technologyGallery: [
       { name: 'HTML', image: 'HTML' },
       { name: 'CSS', image: 'CSS' },

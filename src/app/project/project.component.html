@@ -1,13 +1,15 @@
 <section id="project">
-  <h1>PROJECT</h1>
+  <h1>{{ "sectionName.3" | translate | uppercase }}</h1>
   <article>
     <div class="leftBox">
       <h2>{{ projectList[activeProject].name }}</h2>
 
       <div class="buttonBox">
-        <button [ngClass]="gallery" (click)="changGallery()">gallery</button>
+        <button [ngClass]="gallery" (click)="changGallery()">
+          {{ "projects.gallery" | translate | uppercase }}
+        </button>
         <button [ngClass]="description" (click)="changDescrtiption()">
-          description
+          {{ "projects.description" | translate | uppercase }}
         </button>
       </div>
       <div class="contentBox">
@@ -19,6 +21,9 @@
             <figure>
               <img
                 src="./assets/project/{{ projectList[activeProject].folder }}/{{
+                  projectList[activeProject].photoGallery[numberActivePhoto]
+                }}"
+                alt="{{
                   projectList[activeProject].photoGallery[numberActivePhoto]
                 }}"
               />
@@ -44,11 +49,14 @@
         <div class="description" *ngIf="!galleryActive">
           <div class="descriptionText">
             <p>
-              {{ projectList[activeProject].description }}
+              {{
+                "projects.projectDescription." + projectList[activeProject].id
+                  | translate
+              }}
             </p>
           </div>
           <div class="technology">
-            <h3>Technology</h3>
+            <h3>{{ "projects.technology" | translate | titlecase }}</h3>
             <ul>
               <li
                 *ngFor="

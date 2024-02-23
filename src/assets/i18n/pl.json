@@ -19,5 +19,17 @@
             "polish" : "polski",
             "english" : "angielski"
         }
+    },
+    "projects":{
+        "gallery" : "galeria",
+        "description" : "opis",
+        "technology": "Technologie",
+        "selectProject": "Wybierz Projekt",
+        "projectDescription":{
+            "1":  "Strona internetowa, która powstała na potrzeby koła naukowego Programistów i Miłośników Informatyki działającego przy Wydziale Mechanicznym Politechniki Krakowskiej. Została ona wykonana jako jeden z pierwszych projektów po rekatywacji koła. W towrzeniu strony brało udział kilku członków koła naukowego. ",
+            "2" : "Strona powstała jako projekt akademicki. Został wykonanych według jasno okreśonych wytycznych. Strona ma prezentować wygląd oraz działanie od strony Front-end platformy do rezerwacji wizyt u lekarza. Pozwala ona na wybór specjalności lekarzy a następnie konkretnego lekarza. Następnie wybieramy cel wizyty oraz dzień wraz z godziną. możemy również anulować wizyte.",
+            "3" : "Projekt wykonany podczas nauki języka TypeScript. W ramach nauki przepisałem jeden z poprzednich proejktów z JavaScript/JQuery na TypeScript. Wszystkie funkcjonalności pozostały bez zmian. Takie jak: wybór specjalności lekarzy a następnie konkretnego lekarza, wybranie celu wizyty oraz dzień wraz z godziną.",
+            "4" : "Projekt powstał w celu zaprezentowania siebie wraz z moimi obecnymi projektami i osiągnięciami. Podczas programowania korzystałem z frameworku Angular i TypeScript. Strona została zaprojektowana tak, aby była w pełni responsywna. "
+        }
     }
 }
