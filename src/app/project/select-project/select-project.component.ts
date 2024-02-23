@@ -10,11 +10,9 @@ import { ProjectList } from 'src/app/models/interface';
 export class SelectProjectComponent {
   @Output()
   aProject = new EventEmitter<number>();
-  constructor() {}
   projectList: ProjectList[] = projectList;
   activeProject: number = 0;
-  visMenu: boolean = true;
-  visableMenu: string = 'hiddeMenu';
+  visMenu: boolean = false;
 
   changeProject(idProject: number) {
     this.projectList.forEach((element) => {
@@ -22,23 +20,12 @@ export class SelectProjectComponent {
     });
     this.projectList[idProject - 1].className = 'activeProject';
     this.activeProject = idProject - 1;
-    this.hiddeMenu();
+    this.visMenu = false;
     this.aProject.emit(this.activeProject);
   }
 
   changeMenu() {
-    if (this.visMenu == true) {
-      this.visMenu = false;
-      this.visableMenu = 'hiddeMenu';
-    } else {
-      this.visMenu = true;
-      this.visableMenu = 'visableMenu';
-    }
-  }
-  showMenu() {
-    this.visableMenu = 'visableMenu';
-  }
-  hiddeMenu() {
-    this.visableMenu = 'hiddeMenu';
+    if (this.visMenu) this.visMenu = false;
+    else this.visMenu = true;
   }
 }

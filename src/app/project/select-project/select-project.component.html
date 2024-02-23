@@ -1,7 +1,7 @@
 <button class="selectProjectButton" (click)="changeMenu()">
   {{ "projects.selectProject" | translate | titlecase }}<span>&#8897;</span>
 </button>
-<ul [className]="visableMenu">
+<ul [ngClass]="{ visableMenu: visMenu }">
   <li *ngFor="let project of projectList">
     <button [ngClass]="project.className" (click)="changeProject(project.id)">
       {{ project.name }}
