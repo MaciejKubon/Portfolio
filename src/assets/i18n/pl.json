@@ -26,9 +26,9 @@
         "technology": "Technologie",
         "selectProject": "Wybierz Projekt",
         "projectDescription":{
-            "1":  "Strona internetowa, która powstała na potrzeby oraz jako jeden z pierwszych projektów po reaktywacji Koła Naukowego Programistów i Miłośników Informatyki działającego przy Wydziale Mechanicznym Politechniki Krakowskiej. Strona powstała jako projekt akademicki, który wykonano według jasno określonych wytycznych. W towrzeniu strony brało udział kilku członków koła naukowego.",
-            "2" : "Strona ma prezentować wygląd oraz działanie Front-endu platformy do rezerwacji wizyt u lekarza. Strona ma prezentować wygląd oraz działanie od strony Front-end platformy do rezerwacji wizyt u lekarza. Pozwala ona na wybranie specjalności lekarzy, a następnie konkretnego lekarza. Kolejnym krokiem jest zaznaczenie  celu wizyty oraz dnia wraz z godziną. Istnieje również opcja anulowania wizyty.",
-            "3" : "Projekt został wykonany podczas nauki języka TypeScript. W ramach nauki przepisałem jeden z poprzednich projektów z JavaScript/JQuery na TypeScript. Wszystkie funkcjonalności, takie jak: wybór specjalności oraz konkretnego lekarza,  celu wizyty oraz dnia wraz z godziną, pozostały bez zmian.",
+            "1":  "Strona internetowa to jeden z pierwszych projektów akademickich, który powstał na potrzeby reaktywowanego Koła Naukowego Programistów i Miłośników Informatyki działającego przy Wydziale Mechanicznym Politechniki Krakowskiej. Utworzony według ściśle określonych wytycznych i uruchomiony we współpracy zrzeszonych w nim studentów PK.",
+            "2" : "Strona ma prezentować wygląd oraz działanie od strony Front-end platformy do rezerwacji wizyt u lekarza. Pozwala ona na wybranie specjalności lekarzy, a następnie konkretnego lekarza. Kolejnym krokiem jest zaznaczenie  celu wizyty oraz dnia wraz z godziną. Istnieje również opcja anulowania wizyty.",
+            "3" : "Projekt został wykonany podczas nauki języka TypeScript. W ramach nauki przepisałem jeden z poprzednich projektów z JavaScript/JQuery na TypeScript. Wszystkie funkcjonalności, takie jak: wybór specjalności oraz konkretnego lekarza, celu wizyty oraz dnia wraz z godziną, pozostały bez zmian.",
             "4" : "Projekt powstał w celu zaprezentowania siebie wraz z moimi obecnymi projektami i osiągnięciami. Podczas programowania korzystałem z frameworku Angular i TypeScript. Strona została zaprojektowana tak, aby była w pełni responsywna. "
         }
     }
