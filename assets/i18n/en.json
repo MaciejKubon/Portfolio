@@ -1,0 +1,36 @@
+{
+    "sectionName": {
+        "1": "start",
+        "2": "about",
+        "3": "projects"
+    },
+    "start": {
+        "title_1": "Hi, I'm Maciej Kuboń",
+        "title_2": "Frontend developer",
+        "description" : "A student of applied computer science at the Cracow University of Technology, a member of the scientific circle of Programmers and IT Enthusiasts of the Cracow University of Technology.",
+        "readMore": "Read more"
+    },
+    "about": {
+        "description": "I am a student of Applied Computer Science at the Crakow University of Technology. I graduated from Technical School No. 1 of the name of Ignacy Mościckiego in Tarnów, Poland, specializing in computer science. I have been passionate about computer science since my school years. Since October 2022, I have been a member of the Scientific Circle of Programmers and Computer Enthusiasts, where I co-created the circle's website and participated in the AquaSharp project. We are currently working on an instant messenger application called PIMIConnect. From July 2023 to September 2023, I worked at Selkea company as a service technician .",
+        "skills" : "skills",
+        "language" : "language",
+        "links" : "links",
+        "languageName": {
+            "polish" : "polish",
+            "english" : "english"
+        }
+    },
+    "projects":{
+        "gallery" : "gallery",
+        "description" : "description",
+        "technology": "technology",
+        "selectProject": "Select Project",
+        "projectDescription":{
+            "1": "The website was created as an academic project and was developed according to clear guidelines. The website is intended to showcase the appearance and functionality of the front-end platform for booking doctor's appointments. It allows users to select medical specialties and then choose a specific doctor. Next, users can select the purpose of the visit along with the date and time. Users also have the option to cancel appointments.",
+            "2" : "The website was created for the needs of the Academic Circle of Programmers and Computer Enthusiasts operating at the Faculty of Mechanical Engineering of the Cracow University of Technology. It was developed as one of the first projects after the reactivation of the circle. Several members of the academic circle were involved in the creation of the website.",
+            "3" : "The project was completed during the process of learning TypeScript. As part of the learning process, I rewrote one of the previous projects from JavaScript/JQuery to TypeScript. All functionalities remained unchanged, such as selecting medical specialties and then a specific doctor, choosing the purpose of the visit, along with the date and time. ",
+            "4" : "The project was created to present myself along with my current projects and achievements. During development, I used the Angular framework and TypeScript. The website is designed to be fully responsive "
+        }
+
+    }
+}

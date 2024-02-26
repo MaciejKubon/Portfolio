@@ -1,0 +1,35 @@
+{
+    "sectionName": {
+        "1": "start",
+        "2": "o mnie",
+        "3": "projkety"
+    },
+    "start": {
+        "title_1": "Cześć, jestem Maciej Kuboń",
+        "title_2": "Frontend developer",
+        "description" : "Student informatyki stosowanej na Politechnice Krakowskiej, członek Koła Naukowego Programistów i Miłośników Informatyki Politechniki Krakowskiej.”",
+        "readMore": "Zobacz więcej"
+    },
+    "about": {
+        "description": "Obecnie jestem studentem Informatyki Stosowanej na Politechnice Krakowskiej. Ukończyłem Technikum nr 1 im. Ignacego Mościckiego w Tarnowie z dyplomem technik informatyk. Od lat szkolnych pasjonuje mnie informatyka. W październiku 2022 roku wstąpiłem do Koła Naukowego Programistów i Miłośników Informatyki, gdzie współtworzyem stronę internetową Koła Naukowego oraz brałem udział w projekcie AquaSharp. Obecnie tworzymy aplikację o nazwie PIMIConnect, która będzie pełnić rolę komunikatora o nazwie PIMIConnect. Od lipca 2023 do września 2023 pracowałem w firmie Selkea na stanowisku serwisant sprzętu komputerowego.",
+        "skills" : "umiejętności ",
+        "language" : "języki",
+        "links" : "linki",
+        "languageName": {
+            "polish" : "polski",
+            "english" : "angielski"
+        }
+    },
+    "projects":{
+        "gallery" : "galeria",
+        "description" : "opis",
+        "technology": "Technologie",
+        "selectProject": "Wybierz Projekt",
+        "projectDescription":{
+            "1":  "Strona internetowa to jeden z pierwszych projektów akademickich, który powstał na potrzeby reaktywowanego Koła Naukowego Programistów i Miłośników Informatyki działającego przy Wydziale Mechanicznym Politechniki Krakowskiej. Utworzony według ściśle określonych wytycznych i uruchomiony we współpracy zrzeszonych w nim studentów PK.",
+            "2" : "Strona ma prezentować wygląd oraz działanie od strony Front-end platformy do rezerwacji wizyt u lekarza. Pozwala ona na wybranie specjalności lekarzy, a następnie konkretnego lekarza. Kolejnym krokiem jest zaznaczenie  celu wizyty oraz dnia wraz z godziną. Istnieje również opcja anulowania wizyty.",
+            "3" : "Projekt został wykonany podczas nauki języka TypeScript. W ramach nauki przepisałem jeden z poprzednich projektów z JavaScript/JQuery na TypeScript. Wszystkie funkcjonalności, takie jak: wybór specjalności oraz konkretnego lekarza, celu wizyty oraz dnia wraz z godziną, pozostały bez zmian.",
+            "4" : "Projekt powstał w celu zaprezentowania siebie wraz z moimi obecnymi projektami i osiągnięciami. Podczas programowania korzystałem z frameworku Angular i TypeScript. Strona została zaprojektowana tak, aby była w pełni responsywna. "
+        }
+    }
+}
