@@ -88,6 +88,30 @@ export const projectList: ProjectList[] = [
     ],
     link: 'https://nielogiczne-paliwo.github.io/FuelForecast/',
   },
+  {
+    id: 6,
+    name: 'CTP Application',
+    className: 'noActiveProject',
+    folder: 'CTPApplication',
+    photoGallery: [
+      '01.png',
+      '02.png',
+      '03.png',
+      '04.png',
+      '05.png',
+      '06.png',
+      '07.png',
+      '08.png',
+      '09.png',
+    ],
+    technologyGallery: [
+      { name: 'HTML', image: 'HTML' },
+      { name: 'CSS', image: 'CSS' },
+      { name: 'TypeScript', image: 'TypeScript' },
+      { name: 'Angular', image: 'Angular' },
+    ],
+    link: 'https://maciejkubon.github.io/CTP-APPLICATION/',
+  },
 ];
 export const links: Links[] = [
   {
